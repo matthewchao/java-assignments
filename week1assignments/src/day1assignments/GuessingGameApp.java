@@ -1,7 +1,7 @@
 /**
  * 
  */
-package week1assignments;
+package day1assignments;
 
 import java.util.Scanner;
 
