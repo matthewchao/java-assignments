@@ -25,7 +25,7 @@ public class StarPatterns {
 			return Collections.emptyList();
 		String star = "*";
 
-		List<String> ret = new ArrayList();
+		List<String> ret = new ArrayList<>();
 
 		ret.add(star);
 

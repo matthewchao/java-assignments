@@ -25,6 +25,7 @@ public class GuessingGameApp {
 				if (guess < 1 || guess > 100) {
 					System.out.print("Please follow the instructions and try again:   ");
 				} else {
+					scanner.close();
 					return guess;
 				}
 			} catch (Exception exception) {
