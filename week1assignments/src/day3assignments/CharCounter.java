@@ -36,8 +36,8 @@ public class CharCounter {
 		String pathToFile = FILE_DIRECTORY + File.separator + FILE_NAME;
 		File f = new File(pathToFile);
 
-		try {
-			Reader fr = new FileReader(f);
+		try (Reader fr = new FileReader(f);) {
+
 			int currChar;
 			int count = 0;
 			/*
