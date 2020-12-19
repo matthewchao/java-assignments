@@ -1,0 +1,15 @@
+Date-Time API
+1. I would use ZonedDateTime to represent my birthday;
+since I belong to a particular time zone, the LocalDateTime
+would be slightly ambiguous - it would have my birthday information
+but could mean different absolute times in diffent time zones.
+
+2. (In PreviousThursday.java)
+
+3. For a fixed region, its ZoneId is less ambiguous in terms of that region's time 
+in relation to UTC time; whereas ZoneOffset is some fixed number of hours (usually X:00 or X:30 for some integer X)
+ahead of or behind UTC time.  For a fixed region,
+the ZoneOffset for that region's times may change by 1:00 hour during daylight savings,
+whereas its ZoneId is unchanging.
+
+4. 
