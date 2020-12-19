@@ -12,4 +12,8 @@ ahead of or behind UTC time.  For a fixed region,
 the ZoneOffset for that region's times may change by 1:00 hour during daylight savings,
 whereas its ZoneId is unchanging.
 
-4. 
+4. Once we choose a zone we want to work in, the 
+instance method Instant.at(ZoneId zone) and the static method ZonedDateTime.ofInstant(Instant instant, ZoneId zone) may convert back and forth
+between the two.
+
+5.  
